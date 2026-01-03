@@ -1,0 +1,250 @@
+"use client"
+
+import type React from "react"
+
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion"
+import { Card } from "@/components/ui/card"
+import { useState } from "react"
+
+const techStack = {
+  "Frontend ✧*。": [
+    { name: "HTML", icon: "🌐", color: "text-orange-500" },
+    { name: "CSS", icon: "🎨", color: "text-blue-500" },
+    { name: "React", icon: "⚛️", color: "text-cyan-400" },
+    { name: "Next.js", icon: "▲", color: "text-foreground" },
+    { name: "Tailwind", icon: "🎐", color: "text-teal-400" },
+    { name: "TypeScript", icon: "📘", color: "text-blue-600" },
+  ],
+  "Backend ✧*。": [
+    { name: "Node.js", icon: "🟢", color: "text-green-500" },
+    { name: "Express", icon: "🚂", color: "text-gray-400" },
+    { name: "PostgreSQL", icon: "🐘", color: "text-blue-400" },
+    { name: "Redis", icon: "🔴", color: "text-red-500" },
+  ],
+  "Languages ✧*。": [
+    { name: "JavaScript", icon: "JS", color: "text-yellow-400" },
+    { name: "TypeScript", icon: "TS", color: "text-blue-500" },
+    { name: "Python", icon: "🐍", color: "text-blue-400" },
+    { name: "Go", icon: "🔷", color: "text-cyan-400" },
+  ],
+  "Tools & DevOps ✧*。": [
+    { name: "Git", icon: "🌿", color: "text-orange-600" },
+    { name: "Docker", icon: "🐋", color: "text-blue-500" },
+    { name: "Vercel", icon: "▲", color: "text-foreground" },
+    { name: "GitHub Actions", icon: "⚙️", color: "text-gray-400" },
+  ],
+}
+
+function TechSkill({ tool, index, categoryIndex }: { tool: any; index: number; categoryIndex: number }) {
+  const [isHovered, setIsHovered] = useState(false)
+  const x = useMotionValue(0)
+  const y = useMotionValue(0)
+
+  const rotateX = useSpring(useTransform(y, [-50, 50], [15, -15]), { damping: 20, stiffness: 200 })
+  const rotateY = useSpring(useTransform(x, [-50, 50], [-15, 15]), { damping: 20, stiffness: 200 })
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect()
+    const centerX = rect.left + rect.width / 2
+    const centerY = rect.top + rect.height / 2
+    x.set(e.clientX - centerX)
+    y.set(e.clientY - centerY)
+  }
+
+  const handleMouseLeave = () => {
+    setIsHovered(false)
+    x.set(0)
+    y.set(0)
+  }
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8, y: 20 }}
+      whileInView={{ opacity: 1, scale: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        delay: categoryIndex * 0.1 + index * 0.05,
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+      }}
+      onMouseMove={handleMouseMove}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        perspective: "1000px",
+      }}
+      className="group relative"
+    >
+      <motion.div
+        style={{
+          rotateX,
+          rotateY,
+          transformStyle: "preserve-3d",
+        }}
+        animate={{
+          scale: isHovered ? 1.15 : 1,
+          y: isHovered ? -8 : 0,
+        }}
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+        className="relative px-5 py-3 glass rounded-xl border border-border hover:border-accent/50 transition-all duration-300 flex items-center gap-2 cursor-pointer overflow-hidden"
+      >
+        <motion.div
+          className="absolute inset-0 bg-gradient-to-br from-accent/20 via-accent-secondary/20 to-accent-tertiary/20 opacity-0"
+          animate={{ opacity: isHovered ? 1 : 0 }}
+          transition={{ duration: 0.3 }}
+        />
+
+        {isHovered && (
+          <motion.div
+            className="absolute inset-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            {[...Array(3)].map((_, i) => (
+              <motion.div
+                key={i}
+                className="absolute w-1 h-1 bg-accent rounded-full"
+                initial={{
+                  x: "50%",
+                  y: "50%",
+                  scale: 0,
+                }}
+                animate={{
+                  x: `${Math.random() * 100}%`,
+                  y: `${Math.random() * 100}%`,
+                  scale: [0, 1, 0],
+                }}
+                transition={{
+                  duration: 1,
+                  delay: i * 0.2,
+                  repeat: Number.POSITIVE_INFINITY,
+                }}
+              />
+            ))}
+          </motion.div>
+        )}
+
+        <motion.span
+          className={`text-xl ${tool.color} relative z-10`}
+          animate={{
+            rotate: isHovered ? [0, -10, 10, -10, 0] : 0,
+            scale: isHovered ? 1.2 : 1,
+          }}
+          transition={{ duration: 0.5 }}
+        >
+          {tool.icon}
+        </motion.span>
+        <span className="text-sm font-medium text-foreground relative z-10">{tool.name}</span>
+      </motion.div>
+    </motion.div>
+  )
+}
+
+export default function TechStack() {
+  return (
+    <section className="relative py-24 px-6 bg-gradient-to-b from-transparent via-accent/5 to-transparent overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {[...Array(3)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-[500px] h-[500px] rounded-full"
+            style={{
+              background: `radial-gradient(circle, ${
+                i === 0 ? "rgba(99, 102, 241, 0.1)" : i === 1 ? "rgba(168, 85, 247, 0.1)" : "rgba(236, 72, 153, 0.1)"
+              } 0%, transparent 70%)`,
+              left: `${i * 40}%`,
+              top: `${i * 30}%`,
+            }}
+            animate={{
+              x: [0, 100, 0],
+              y: [0, -50, 0],
+              scale: [1, 1.2, 1],
+            }}
+            transition={{
+              duration: 15 + i * 3,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "easeInOut",
+            }}
+          />
+        ))}
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center space-y-4 mb-16"
+        >
+          <motion.h2
+            className="text-3xl md:text-4xl font-bold tracking-tight"
+            animate={{
+              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+            }}
+            transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY }}
+            style={{
+              backgroundImage: "linear-gradient(90deg, currentColor 0%, rgb(99, 102, 241) 50%, currentColor 100%)",
+              backgroundSize: "200% auto",
+              backgroundClip: "text",
+            }}
+          >
+            Tech Stack
+          </motion.h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Technologies I use to build modern, scalable applications
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {Object.entries(techStack).map(([category, tools], categoryIndex) => (
+            <motion.div
+              key={category}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{
+                duration: 0.5,
+                delay: categoryIndex * 0.1,
+                type: "spring",
+                stiffness: 100,
+              }}
+            >
+              <Card className="p-6 glass-strong border-accent/20 hover:border-accent/40 transition-all duration-300 h-full group overflow-hidden">
+                <motion.div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                  style={{
+                    background: "linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.3), transparent)",
+                  }}
+                  animate={{
+                    x: ["-100%", "100%"],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Number.POSITIVE_INFINITY,
+                    ease: "linear",
+                  }}
+                />
+
+                <motion.h3
+                  className="text-lg font-semibold mb-6 text-accent relative z-10"
+                  whileHover={{ x: 5 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  {category}
+                </motion.h3>
+                <div className="flex flex-wrap gap-3 relative z-10">
+                  {tools.map((tool, index) => (
+                    <TechSkill key={tool.name} tool={tool} index={index} categoryIndex={categoryIndex} />
+                  ))}
+                </div>
+              </Card>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

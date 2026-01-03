@@ -204,6 +204,9 @@ importers:
         specifier: 3.25.76
         version: 3.25.76
     devDependencies:
+      '@netlify/plugin-nextjs':
+        specifier: ^5.15.3
+        version: 5.15.3
       '@tailwindcss/postcss':
         specifier: ^4.1.9
         version: 4.1.9
@@ -1131,6 +1134,10 @@ packages:
     resolution: {integrity: sha512-2Z0FATFHaoYJ8b+Y4y4Hgfn3FRFwuU5zRrk+9dFWp4uGAdHGqVEdP7HP+gLA3X469KXHmfupJaUbKo1b/aDKIg==}
     peerDependencies:
       three: '>= 0.159.0'
+
+  '@netlify/plugin-nextjs@5.15.3':
+    resolution: {integrity: sha512-l3SicRpOy+27VTZbIhEgI89+uY+1Y3CsMZW3mfKBFC4A/sP7u33ftDZ45m6634dUcc6BnLNxPIxL6TiBdvqxOQ==}
+    engines: {node: '>=18.0.0'}
 
   '@next/env@16.0.10':
     resolution: {integrity: sha512-8tuaQkyDVgeONQ1MeT9Mkk8pQmZapMKFh5B+OrFUlG3rVmYTXcXlBetBgTurKXGaIZvkoqRT9JL5K3phXcgang==}
@@ -5754,6 +5761,8 @@ snapshots:
     dependencies:
       promise-worker-transferable: 1.0.4
       three: 0.182.0
+
+  '@netlify/plugin-nextjs@5.15.3': {}
 
   '@next/env@16.0.10': {}
 
