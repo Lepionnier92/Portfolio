@@ -11,30 +11,30 @@ const stats = [
   {
     icon: Briefcase,
     value: 36,
-    label: "Projects Delivered",
-    sublabel: "Production-ready applications",
+    label: "Projets Livrés",
+    sublabel: "Applications prêtes pour la production",
     gradient: "from-accent to-accent-secondary",
   },
   {
     icon: Users,
     value: 280,
-    label: "Happy Clients",
-    sublabel: "Long-term partnerships",
+    label: "Clients Satisfaits",
+    sublabel: "Partenariats à long terme",
     gradient: "from-accent-secondary to-accent-tertiary",
   },
   {
     icon: Coffee,
     value: 3000,
     suffix: "+",
-    label: "Active Users",
-    sublabel: "Daily engaged users",
+    label: "Utilisateurs Actifs",
+    sublabel: "Utilisateurs engagés quotidiennement",
     gradient: "from-accent-tertiary to-accent",
   },
   {
     icon: Award,
     value: 12,
-    label: "Awards Won",
-    sublabel: "Design & engineering excellence",
+    label: "Prix Remportés",
+    sublabel: "Excellence en design & ingénierie",
     gradient: "from-accent to-accent-tertiary",
   },
 ]
@@ -228,10 +228,10 @@ export default function Stats() {
               backgroundClip: "text",
             }}
           >
-            Impact by Numbers
+            Impact en Chiffres
           </motion.h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Measurable outcomes from collaborative efforts
+            Résultats mesurables issus d'efforts collaboratifs
           </p>
         </motion.div>
 

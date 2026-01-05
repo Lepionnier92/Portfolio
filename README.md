@@ -1,30 +1,39 @@
-# Portfolio homepage design
+# Portfolio - Jules Bellavoir
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+Portfolio personnel de Jules Bellavoir, développeur Full-Stack.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/ayush2011111111111111111111111s-projects/v0-portfolio-homepage-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/tu0JbqDebeh)
+## Technologies utilisées
 
-## Overview
+- **Next.js 16** - Framework React
+- **TypeScript** - Typage statique
+- **Tailwind CSS** - Framework CSS
+- **Framer Motion** - Animations
+- **React Three Fiber** - Scène 3D
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## Installation
 
-## Deployment
+```bash
+pnpm install
+```
 
-Your project is live at:
+## Développement
 
-**[https://vercel.com/ayush2011111111111111111111111s-projects/v0-portfolio-homepage-design](https://vercel.com/ayush2011111111111111111111111s-projects/v0-portfolio-homepage-design)**
+```bash
+pnpm dev
+```
 
-## Build your app
+Le site sera accessible sur [http://localhost:3000](http://localhost:3000)
 
-Continue building your app on:
+## Build
 
-**[https://v0.app/chat/tu0JbqDebeh](https://v0.app/chat/tu0JbqDebeh)**
+```bash
+pnpm build
+```
 
-## How It Works
+## Déploiement
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Ce projet est configuré pour être déployé sur **Netlify**.
+
+## Licence
+
+© 2025 Jules Bellavoir. Tous droits réservés.

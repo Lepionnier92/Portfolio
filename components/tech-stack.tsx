@@ -21,16 +21,16 @@ const techStack = {
     { name: "PostgreSQL", icon: "🐘", color: "text-blue-400" },
     { name: "Redis", icon: "🔴", color: "text-red-500" },
   ],
-  "Languages ✧*。": [
+  "Langages ✧*。": [
     { name: "JavaScript", icon: "JS", color: "text-yellow-400" },
     { name: "TypeScript", icon: "TS", color: "text-blue-500" },
     { name: "Python", icon: "🐍", color: "text-blue-400" },
     { name: "Go", icon: "🔷", color: "text-cyan-400" },
   ],
-  "Tools & DevOps ✧*。": [
+  "Outils & DevOps ✧*。": [
     { name: "Git", icon: "🌿", color: "text-orange-600" },
     { name: "Docker", icon: "🐋", color: "text-blue-500" },
-    { name: "Vercel", icon: "▲", color: "text-foreground" },
+    { name: "Netlify", icon: "▲", color: "text-foreground" },
     { name: "GitHub Actions", icon: "⚙️", color: "text-gray-400" },
   ],
 }

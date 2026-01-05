@@ -7,34 +7,34 @@ import { Code2, Layers, Zap } from "lucide-react"
 const expertiseAreas = [
   {
     icon: Code2,
-    title: "Frontend Engineering",
-    description: "Building responsive, accessible interfaces with React, Next.js, and modern CSS frameworks.",
+    title: "Ingénierie Frontend",
+    description: "Création d'interfaces réactives et accessibles avec React, Next.js et les frameworks CSS modernes.",
     details: [
-      "Component architecture with composition patterns",
-      "Performance optimization: code splitting, lazy loading, image optimization",
-      "Accessibility-first development following WCAG 2.1 guidelines",
+      "Architecture de composants avec des patterns de composition",
+      "Optimisation des performances : code splitting, lazy loading, optimisation des images",
+      "Développement axé sur l'accessibilité selon les directives WCAG 2.1",
     ],
     gradient: "from-accent/20 to-accent/5",
   },
   {
     icon: Layers,
-    title: "System Design",
-    description: "Architecting scalable, maintainable systems with thoughtful abstraction and clear boundaries.",
+    title: "Conception Système",
+    description: "Architecture de systèmes évolutifs et maintenables avec une abstraction réfléchie et des limites claires.",
     details: [
-      "Microservices with event-driven architecture",
-      "Database schema design and query optimization",
-      "API design following REST and GraphQL best practices",
+      "Microservices avec architecture événementielle",
+      "Conception de schémas de base de données et optimisation des requêtes",
+      "Conception d'API suivant les bonnes pratiques REST et GraphQL",
     ],
     gradient: "from-accent-secondary/20 to-accent-secondary/5",
   },
   {
     icon: Zap,
     title: "Performance",
-    description: "Identifying bottlenecks and implementing solutions that matter to end users.",
+    description: "Identification des goulots d'étranglement et mise en œuvre de solutions qui comptent pour les utilisateurs.",
     details: [
-      "Core Web Vitals optimization (LCP, FID, CLS)",
-      "Bundle analysis and strategic code splitting",
-      "Server-side rendering strategies and edge compute",
+      "Optimisation des Core Web Vitals (LCP, FID, CLS)",
+      "Analyse des bundles et code splitting stratégique",
+      "Stratégies de rendu côté serveur et edge computing",
     ],
     gradient: "from-accent-tertiary/20 to-accent-tertiary/5",
   },
@@ -51,9 +51,9 @@ export default function Expertise() {
           transition={{ duration: 0.5 }}
           className="text-center space-y-4 mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Core Expertise</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Expertise Clé</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Specialized skills developed through real-world challenges and continuous learning
+            Compétences spécialisées développées à travers des défis réels et un apprentissage continu
           </p>
         </motion.div>
 

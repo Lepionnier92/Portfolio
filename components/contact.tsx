@@ -8,9 +8,9 @@ import { Github, Linkedin, Mail, Twitter, Send, CheckCircle2, Sparkles } from "l
 import { useState, useRef } from "react"
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/alexchen", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com/in/alexchen", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com/alexchen", label: "Twitter" },
+  { icon: Github, href: "https://github.com/julesbellavoir", label: "GitHub" },
+  { icon: Linkedin, href: "https://linkedin.com/in/julesbellavoir", label: "LinkedIn" },
+  { icon: Twitter, href: "https://twitter.com/julesbellavoir", label: "Twitter" },
 ]
 
 export default function Contact() {
@@ -47,7 +47,7 @@ export default function Contact() {
 
     try {
       const webhookUrl =
-        "https://discord.com/api/webhooks/1454316159255187600/FeW2tSMSnD0pv7qaV5JdHHsokVjkC2xoIVeFP4XrTlGVRvXtWUWCwUvQ9fPoTU4PC2Xe"
+        "https://discord.com/api/webhooks/1457009977519767734/DbPSvAs39nNff_YX_rxrS3wgxPOgldiyLoti45kxU1NkVLoJkN1c9ZOH4FPCTNZNKsm4"
 
       const embed = {
         embeds: [
@@ -56,7 +56,7 @@ export default function Contact() {
             color: 0x6366f1,
             fields: [
               {
-                name: "👤 Name",
+                name: "👤 Nom",
                 value: formData.name,
                 inline: true,
               },
@@ -138,7 +138,7 @@ export default function Contact() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/20"
           >
             <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-medium text-accent">Get in Touch</span>
+            <span className="text-sm font-medium text-accent">Me contacter</span>
           </motion.div>
 
           <motion.h2
@@ -148,7 +148,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Let's Create Something Amazing
+            Créons quelque chose d'incroyable
           </motion.h2>
 
           <motion.p
@@ -158,7 +158,7 @@ export default function Contact() {
             transition={{ delay: 0.2 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"
           >
-            Have a project in mind? Want to collaborate? Drop me a message and I'll get back to you soon!
+            Vous avez un projet en tête ou une question à poser ? Envoyez-moi un message et je vous répondrai rapidement !
           </motion.p>
         </motion.div>
 
@@ -194,7 +194,7 @@ export default function Contact() {
                 className="space-y-2"
               >
                 <label htmlFor="name" className="text-sm font-medium text-foreground flex items-center gap-2">
-                  Your Name
+                  Votre nom
                   <span className="text-accent">*</span>
                 </label>
                 <motion.input
@@ -205,7 +205,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 bg-background/50 border border-border/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all text-foreground placeholder:text-muted-foreground"
-                  placeholder="John Doe"
+                  placeholder="Jean Dupont"
                 />
               </motion.div>
 
@@ -218,7 +218,7 @@ export default function Contact() {
                 className="space-y-2"
               >
                 <label htmlFor="email" className="text-sm font-medium text-foreground flex items-center gap-2">
-                  Email Address
+                  Adresse e-mail
                   <span className="text-accent">*</span>
                 </label>
                 <motion.input
@@ -229,7 +229,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 bg-background/50 border border-border/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all text-foreground placeholder:text-muted-foreground"
-                  placeholder="john@example.com"
+                  placeholder="jean@exemple.com"
                 />
               </motion.div>
 
@@ -242,7 +242,7 @@ export default function Contact() {
                 className="space-y-2"
               >
                 <label htmlFor="message" className="text-sm font-medium text-foreground flex items-center gap-2">
-                  Your Message
+                  Votre message
                   <span className="text-accent">*</span>
                 </label>
                 <motion.textarea
@@ -253,7 +253,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 bg-background/50 border border-border/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all text-foreground placeholder:text-muted-foreground resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="Précisez votre projet ou posez votre question ici..."
                 />
               </motion.div>
 
@@ -287,10 +287,10 @@ export default function Contact() {
                     {status === "idle" && <Send className="w-5 h-5" />}
                     {status === "error" && <Mail className="w-5 h-5" />}
 
-                    {status === "loading" && "Sending..."}
-                    {status === "success" && "Message Sent!"}
-                    {status === "idle" && "Send Message"}
-                    {status === "error" && "Try Again"}
+                    {status === "loading" && "Envoi en cours..."}
+                    {status === "success" && "Message envoyé !"}
+                    {status === "idle" && "Envoyer le message"}
+                    {status === "error" && "Réessayer"}
                   </span>
                 </Button>
               </motion.div>
@@ -303,7 +303,7 @@ export default function Contact() {
                   exit={{ opacity: 0, scale: 0.8 }}
                   className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg text-center"
                 >
-                  <p className="text-green-500 font-medium">Thank you! I'll get back to you soon.</p>
+                  <p className="text-green-500 font-medium">Merci ! Je vous répondrai bientôt.</p>
                 </motion.div>
               )}
             </form>
@@ -349,7 +349,7 @@ export default function Contact() {
           transition={{ duration: 0.5, delay: 1 }}
           className="pt-16 text-center text-sm text-muted-foreground"
         >
-          © 2025 Alex Chen. Crafted with passion and code.
+          © 2025 Jules Bellavoir. Créé avec passion et code.
         </motion.div>
       </div>
     </section>

@@ -6,9 +6,9 @@ import { Code2, Sparkles, Heart } from "lucide-react"
 
 export default function About() {
   const highlights = [
-    { icon: Code2, title: "Clean Code", text: "Write code that humans can read" },
-    { icon: Sparkles, title: "Performance", text: "Fast, responsive, delightful" },
-    { icon: Heart, title: "User First", text: "Build with empathy and care" },
+    { icon: Code2, title: "Code Propre", text: "Écrire du code que les humains peuvent lire" },
+    { icon: Sparkles, title: "Performance", text: "Rapide, réactif, agréable" },
+    { icon: Heart, title: "Utilisateur d'abord", text: "Construire avec empathie et attention" },
   ]
 
   return (
@@ -22,7 +22,7 @@ export default function About() {
           className="space-y-12"
         >
           <h2 className="text-5xl md:text-6xl font-bold tracking-tight font-display bg-gradient-to-r from-foreground to-foreground/60 bg-clip-text text-transparent">
-            About Me
+            À propos de moi
           </h2>
 
           <motion.div
@@ -33,12 +33,12 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-xl text-foreground/90 leading-relaxed font-body">
-              I believe in building things that matter. Every line of code should serve a purpose, every design decision
-              should enhance the user experience.
+              Je crois en la création de choses qui comptent. Chaque ligne de code doit servir un but, chaque décision de design
+              doit améliorer l'expérience utilisateur.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed font-body">
-              When I am not coding, you will find me exploring new technologies, contributing to open source, or
-              enjoying a good cup of coffee while sketching UI ideas.
+              Quand je ne code pas, vous me trouverez en train d'explorer de nouvelles technologies, de contribuer à l'open source, ou
+              de savourer un bon café tout en esquissant des idées d'interface.
             </p>
           </motion.div>
 
@@ -82,7 +82,7 @@ export default function About() {
             className="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-accent/5 to-accent-secondary/5 border border-accent/10"
           >
             <h3 className="text-2xl font-semibold text-foreground font-heading flex items-center gap-3">
-              <span>Current Stack</span>
+              <span>Stack Actuel</span>
               <Sparkles className="w-5 h-5 text-accent-yellow" />
             </h3>
             <div className="flex flex-wrap gap-3">
@@ -105,7 +105,7 @@ export default function About() {
           </motion.div>
         </motion.div>
 
-        <Annotation text="Always learning" delay={0.5} />
+        <Annotation text="Toujours en apprentissage" delay={0.5} />
       </div>
     </section>
   )

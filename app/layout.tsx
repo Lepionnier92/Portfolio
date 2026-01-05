@@ -21,9 +21,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Alex Chen | Full-Stack Developer",
+  title: "Jules Bellavoir | Développeur Full-Stack",
   description:
-    "Full-stack developer crafting beautiful interfaces and robust systems. Specializing in Next.js, React, and TypeScript.",
+    "Développeur full-stack créant de belles interfaces et des systèmes robustes. Spécialisé en Next.js, React et TypeScript.",
   icons: {
     icon: [
       {
@@ -32,7 +32,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -41,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={`${spaceGrotesk.variable} ${poppins.variable} ${inter.variable} font-body antialiased`}>
         {children}
         <Analytics />

@@ -126,7 +126,7 @@ export default function Hero() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2, type: "spring" }}
                 >
-                  Hello! I am
+                  Bonjour ! Je suis
                 </motion.span>
                 <motion.h1
                   className="text-6xl md:text-7xl font-bold tracking-tight text-balance leading-[1.1] font-display"
@@ -142,7 +142,7 @@ export default function Hero() {
                     transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
                     style={{ backgroundSize: "200% 200%" }}
                   >
-                    Alex Chen
+                    Jules Bellavoir
                   </motion.span>
                 </motion.h1>
               </motion.div>
@@ -163,7 +163,7 @@ export default function Hero() {
                 >
                   <Sparkles className="w-4 h-4" />
                 </motion.div>
-                Full-Stack Developer & Creator
+                Etudiant en MSPC et Développeur à mes heures perdues
               </motion.span>
 
               <motion.p
@@ -172,7 +172,7 @@ export default function Hero() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
               >
-                Building cool stuff with code
+                Je crée des trucs cool avec du code et un peu d'imagination
               </motion.p>
             </motion.div>
 
@@ -182,7 +182,7 @@ export default function Hero() {
               transition={{ delay: 0.7 }}
               className="space-y-3"
             >
-              {["Creating beautiful interfaces", "Solving complex problems", "Working with modern web tech"].map(
+              {["Créer de belles interfaces", "Résoudre des problèmes complexes", "Travailler avec les technologies web modernes"].map(
                 (text, i) => (
                   <motion.p
                     key={text}
@@ -222,7 +222,7 @@ export default function Hero() {
                     animate={{ x: [0, 5, 0] }}
                     transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
                   >
-                    View Work
+                    Voir mes projets
                   </motion.span>
                 </Button>
               </motion.div>
@@ -251,7 +251,7 @@ export default function Hero() {
               {[
                 { icon: Github, label: "GitHub", href: "https://github.com", color: "accent" },
                 { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com", color: "accent-secondary" },
-                { icon: Mail, label: "Email", href: "mailto:alex@example.com", color: "accent-pink" },
+                { icon: Mail, label: "Email", href: "mailto:jules.bellavoir@gmail.com", color: "accent-pink" },
               ].map((social, index) => (
                 <motion.a
                   key={social.label}
@@ -341,7 +341,7 @@ export default function Hero() {
                   boxShadow: "0 0 50px rgba(99, 179, 237, 0.5)",
                 }}
               >
-                <img src="/software-engineer-portrait.png" alt="Alex Chen" className="w-full h-full object-cover" />
+                <img src="#" alt="Jules Bellavoir" className="w-full h-full object-cover" />
               </motion.div>
             </motion.div>
           </motion.div>
@@ -365,7 +365,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        <Annotation text="Less talk, more code" delay={1.8} />
+        {/*<Annotation text="Moins de paroles, plus de code" delay={1.8} />*/}
       </div>
     </motion.section>
   )

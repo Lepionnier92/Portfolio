@@ -8,12 +8,12 @@ import { useRef } from "react"
 
 const projects = [
   {
-    title: "Streamline Commerce",
-    description: "Modern e-commerce platform with real-time inventory synchronization and progressive checkout.",
+    title: "Chef d'œuvre MSPC",
+    description: "Reabilitation dune vielle porte de bus pour quelle puise servir a de future TP",
     outcome:
       "Reduced checkout abandonment by 34% through progressive form validation with real-time field-level error handling and session persistence across browser refreshes. Implemented optimistic UI updates for cart operations using SWR's mutate API—perceived performance improved 2x, users report instant feedback. Chose edge functions over traditional SSR for product pages—prioritized TTFB (reduced from 800ms to 120ms) over build complexity, acceptable trade-off for dynamic inventory.",
-    tags: ["Next.js 14", "Stripe", "PostgreSQL", "Vercel Edge"],
-    year: "2024",
+    tags: ["Chef d'œuvre", "MSPC", "Automate", "Porte de bus"],
+    year: "2025-2027",
     gradient: "from-accent to-accent-secondary",
     link: "#",
   },
@@ -72,7 +72,7 @@ export default function SelectedWork() {
               color: "transparent",
             }}
           >
-            Selected Work
+            Projets Sélectionnés
           </motion.h2>
           <motion.p
             className="text-muted-foreground text-lg leading-relaxed max-w-2xl font-body"
@@ -81,7 +81,7 @@ export default function SelectedWork() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            Recent projects I am proud of
+            Projets récents dont je suis fier
           </motion.p>
         </motion.div>
 
@@ -206,7 +206,7 @@ export default function SelectedWork() {
                     whileHover={{ x: 8 }}
                     transition={{ type: "spring", stiffness: 400 }}
                   >
-                    View Project
+                    Voir le projet
                     <motion.div
                       animate={{ rotate: [0, -15, 0] }}
                       transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
@@ -220,7 +220,7 @@ export default function SelectedWork() {
           ))}
         </div>
 
-        <Annotation text="Quality over quantity" delay={0.3} position="right" />
+        <Annotation text="La qualité plutôt que la quantité" delay={0.3} position="right" />
       </motion.div>
     </section>
   )
