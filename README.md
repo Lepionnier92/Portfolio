@@ -32,7 +32,17 @@ pnpm build
 
 ## Déploiement
 
-Ce projet est configuré pour être déployé sur **Netlify**.
+Ce projet peut être déployé sur **GitHub Pages** en utilisant GitHub Actions. Le workflow build et exporte le site statique dans `out/` puis publie le contenu sur la branche `gh-pages`.
+
+Pour tester l'export localement :
+
+```bash
+npm run build
+npm run export
+# le dossier exporté est `out/`
+```
+
+Le workflow se déclenche automatiquement à chaque push sur la branche `main`.
 
 ## Licence
 
