@@ -250,7 +250,7 @@ export default function Hero() {
             >
               {[
                 { icon: Github, label: "GitHub", href: "https://github.com", color: "accent" },
-                { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jules-bellavoir", color: "accent-secondary" },
+                { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/julesbellavoir", color: "accent-secondary" },
                 { icon: Mail, label: "Email", href: "mailto:jules.bellavoir@gmail.com", color: "accent-pink" },
               ].map((social, index) => (
                 <motion.a
