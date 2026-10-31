@@ -253,7 +253,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 bg-background/50 border border-border/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent/50 focus:border-accent transition-all text-foreground placeholder:text-muted-foreground resize-none"
-                  placeholder="Précisez votre projet ou posez votre question ici..."
+                  placeholder="Expliquez votre besoin ou posez votre question ici..."
                 />
               </motion.div>
 
