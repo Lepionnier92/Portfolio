@@ -163,7 +163,7 @@ export default function Hero() {
                 >
                   <Sparkles className="w-4 h-4" />
                 </motion.div>
-                Etudiant en MSPC et Développeur à mes heures perdues
+                Etudiant en MSPC a La Salle Saint Nicolas, Issy-les-moulineaux
               </motion.span>
 
               <motion.p
@@ -172,7 +172,7 @@ export default function Hero() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
               >
-                Je crée des trucs cool avec du code et un peu d'imagination
+                Moins de blabla, plus de maintenance.
               </motion.p>
             </motion.div>
 
@@ -182,7 +182,7 @@ export default function Hero() {
               transition={{ delay: 0.7 }}
               className="space-y-3"
             >
-              {["Créer de belles interfaces", "Résoudre des problèmes complexes", "Travailler avec les technologies web modernes"].map(
+              {["Anticiper les défaillances", "Résoudre des problèmes complexes", "Travailler avec les technologies web modernes"].map(
                 (text, i) => (
                   <motion.p
                     key={text}
@@ -250,7 +250,7 @@ export default function Hero() {
             >
               {[
                 { icon: Github, label: "GitHub", href: "https://github.com", color: "accent" },
-                { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com", color: "accent-secondary" },
+                { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/jules-bellavoir", color: "accent-secondary" },
                 { icon: Mail, label: "Email", href: "mailto:jules.bellavoir@gmail.com", color: "accent-pink" },
               ].map((social, index) => (
                 <motion.a

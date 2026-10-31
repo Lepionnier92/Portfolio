@@ -52,7 +52,7 @@ export default function Contact() {
       const embed = {
         embeds: [
           {
-            title: "📬 New Portfolio Contact",
+            title: "📬 Nouveaux Contact sur le Portefolio",
             color: 0x6366f1,
             fields: [
               {
@@ -72,7 +72,7 @@ export default function Contact() {
             ],
             timestamp: new Date().toISOString(),
             footer: {
-              text: "Portfolio Contact Form",
+              text: "Formulaire de Contact",
             },
           },
         ],

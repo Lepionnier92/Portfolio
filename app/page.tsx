@@ -2,7 +2,7 @@ import Hero from "@/components/hero"
 import Expertise from "@/components/expertise"
 import TechStack from "@/components/tech-stack"
 import SelectedWork from "@/components/selected-work"
-import Stats from "@/components/stats"
+//import Stats from "@/components/stats"
 import About from "@/components/about"
 import Contact from "@/components/contact"
 import Scene3D from "@/components/3d-scene"
@@ -18,7 +18,6 @@ export default function HomePage() {
         <Expertise />
         <TechStack />
         <SelectedWork />
-        <Stats />
         <About />
         <Contact />
       </main>
