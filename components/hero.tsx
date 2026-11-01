@@ -182,7 +182,7 @@ export default function Hero() {
               transition={{ delay: 0.7 }}
               className="space-y-3"
             >
-              {["Anticiper les défaillances", "Résoudre des problèmes complexes", "Travailler avec les technologies web modernes"].map(
+              {["Anticiper les défaillances", "Résoudre des problèmes complexes", "Intégrer les technologies connectées"].map(
                 (text, i) => (
                   <motion.p
                     key={text}
@@ -219,8 +219,8 @@ export default function Hero() {
                   onClick={scrollToWork}
                 >
                   <motion.span
-                    animate={{ x: [0, 5, 0] }}
-                    transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
+                    /*animate={{ x: [0, 5, 0] }}
+                    transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}*/
                   >
                     Voir mes projets
                   </motion.span>
@@ -249,7 +249,7 @@ export default function Hero() {
               className="flex gap-4"
             >
               {[
-                { icon: Github, label: "GitHub", href: "https://github.com", color: "accent" },
+                { icon: Github, label: "GitHub", href: "https://github.com/lepionnier92", color: "accent" },
                 { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/julesbellavoir", color: "accent-secondary" },
                 { icon: Mail, label: "Email", href: "mailto:jules.bellavoir@gmail.com", color: "accent-pink" },
               ].map((social, index) => (
@@ -341,7 +341,7 @@ export default function Hero() {
                   boxShadow: "0 0 50px rgba(99, 179, 237, 0.5)",
                 }}
               >
-                <img src="#" alt="Jules Bellavoir" className="w-full h-full object-cover" />
+                <img src="https://avatars.githubusercontent.com/u/134221586?v=4" alt="Jules Bellavoir" className="w-full h-full object-cover" />
               </motion.div>
             </motion.div>
           </motion.div>

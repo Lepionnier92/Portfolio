@@ -7,8 +7,8 @@ import { Code2, Layers, Zap } from "lucide-react"
 const expertiseAreas = [
   {
     icon: Code2,
-    title: "Le diagnostic de pannes",
-    description: "Capacité à identifier rapidement l'origine d'une panne complexe (mécanique, électrique, électronique ou automatisée) à l'aide d'appareils de mesure et de la lecture de schémas techniques.",
+    title: "Diagnostic rapide de pannes",
+    description: "capacité à analyser les dysfonctionnements (sur place ou à distance), lire des plans/schémas techniques et identifier l'origine d'une défaillance pour éviter des arrêts de production prolongés",
     details: [
       "Architecture de composants avec des patterns de composition",
       "Optimisation des performances : code splitting, lazy loading, optimisation des images",
@@ -29,8 +29,8 @@ const expertiseAreas = [
   },
   {
     icon: Zap,
-    title: "Les habilitations techniques spécifique",
-    description: "respecte rigoureusement les normes de sécurité et je possède les certifications requises (électriques, hydrauliques ou fluides) pour manipuler les équipements industriels ou tertiaires.",
+    title: "La polyvalence technique",
+    description: "Maîtrise des domaines fondamentaux comme l'électrotechnique, la mécanique, l'hydraulique, la pneumatique ou l'automatisation pour intervenir sur des équipements variés",
     details: [
       "Optimisation des Core Web Vitals (LCP, FID, CLS)",
       "Analyse des bundles et code splitting stratégique",
@@ -51,7 +51,7 @@ export default function Expertise() {
           transition={{ duration: 0.5 }}
           className="text-center space-y-4 mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Expertise Clé</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Competence Clé</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Compétences spécialisées développées à travers des défis réels et un apprentissage continu
           </p>
