@@ -14,7 +14,7 @@ const techStack = {
     { name: "Touch Panel", color: "text-foreground" },
     ],
   "Électrotechnique & Pneumatique": [
-    { name: "SchemELECT", color: "text-green-500" },
+    { name: "Automation Studio", color: "text-green-500" },
     { name: "Multimètres",  color: "text-gray-400" },
     { name: "Capteurs", color: "text-purple-400" },
     { name: "Vérins",  color: "text-blue-400" },
