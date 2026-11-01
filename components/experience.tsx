@@ -20,7 +20,7 @@ const experiences: ProfessionalExperience[] = [
     type: "Stage",
     period: "Juin 2026",
     location: "Orly, Île-de-France, France",
-    description: "desassemblage inspaction et remontage de moteurs d'avion GE90 et GE110",
+    description: "desassemblage inspection et remontage de moteurs d'avion GE90 et GE110",
     skills: ["Maintenace Preventive", "Diagnostic", "Montage/Demontage"],
   },
   {
@@ -29,7 +29,7 @@ const experiences: ProfessionalExperience[] = [
     type: "Stage",
     period: "Novembre 2025",
     location: "Ville de Paris, Île-de-France, France",
-    description: "Maintenance des rame de métro MF67 ",
+    description: "Maintenance des rames de métro MF67 ",
     skills: ["Maintenance corrective", "Maintenance préventive", "Diagnostic", "Montage/Demontage"],
   },
   {

@@ -148,7 +148,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Relevons les défis industriels de demain
+            Prêt à intervenir sur vos équipements
           </motion.h2>
 
           <motion.p
@@ -158,7 +158,7 @@ export default function Contact() {
             transition={{ delay: 0.2 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"
           >
-            Un projet d'optimisation, une opportunité ou un poste à pourvoir ? Discutons-en dès maintenant.
+            Je suis passionné par les systèmes automatisés et l'Industrie 4.0. Si vous souhaitez discuter de mes compétences sur le terrain ou si vous avez un poste à pourvoir, je suis là pour vous. parlons-en dès maintenant.
           </motion.p>
         </motion.div>
 

@@ -6,9 +6,9 @@ import { Code2, Sparkles, Heart } from "lucide-react"
 
 export default function About() {
   const highlights = [
-    { icon: Code2, title: "Code Propre", text: "Écrire du code que les humains peuvent lire" },
-    { icon: Sparkles, title: "Performance", text: "Rapide, réactif, agréable" },
-    { icon: Heart, title: "Utilisateur d'abord", text: "Construire avec empathie et attention" },
+    { icon: Code2, title: "Rigueur & Sécurité", text: "Intervenir selon les règles de l'art et respecter les procédures de consignation." },
+    { icon: Sparkles, title: "Réactivité & Méthode", text: "Analyser le problème sans précipitation et intervenir efficacement pour limiter les temps d'arrêt." },
+    { icon: Heart, title: "Esprit d'équipe & Terrain", text: "Communiquer avec les opérateurs de production et transmettre les informations clés en GMAO." },
   ]
 
   return (

@@ -75,7 +75,7 @@ export default function SelectedWork() {
                   <div className="space-y-3">
                     <div className="flex items-start justify-between gap-2">
                       <motion.span
-                        className="text-xs text-accent font-mono px-2 py-1 bg-accent/10 rounded border border-accent/20 font-heading"
+                        className="text-xs text-accent  px-2 py-1 bg-accent/10 rounded border border-accent/20 font-heading"
                         whileHover={{ scale: 1.1, rotate: 2 }}
                         transition={{ type: "spring", stiffness: 400 }}
                       >
@@ -116,7 +116,7 @@ export default function SelectedWork() {
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 + i * 0.05, type: "spring" }}
                         whileHover={{ scale: 1.15, y: -3, rotate: 2 }}
-                        className="px-2.5 py-1 text-xs bg-secondary/50 text-foreground border border-border rounded-full font-medium font-mono"
+                        className="px-2.5 py-1 text-xs bg-secondary/50 text-foreground border border-border rounded-full font-medium "
                       >
                         {tag}
                       </motion.span>

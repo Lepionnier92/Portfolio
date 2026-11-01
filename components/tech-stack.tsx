@@ -81,17 +81,13 @@ function TechSkill({ tool, index, categoryIndex }: { tool: any; index: number; c
           rotateY,
           transformStyle: "preserve-3d",
         }}
-        animate={{
-          scale: isHovered ? 1.15 : 1,
-          y: isHovered ? -8 : 0,
-        }}
+        
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
         className="relative px-5 py-3 glass rounded-xl border border-border hover:border-accent/50 transition-all duration-300 flex items-center gap-2 cursor-pointer overflow-hidden"
       >
         <motion.div
           className="absolute inset-0 bg-gradient-to-br from-accent/20 via-accent-secondary/20 to-accent-tertiary/20 opacity-0"
-          animate={{ opacity: isHovered ? 1 : 0 }}
-          transition={{ duration: 0.3 }}
+        
         />
 
         {isHovered && (
@@ -110,11 +106,7 @@ function TechSkill({ tool, index, categoryIndex }: { tool: any; index: number; c
                   y: "50%",
                   scale: 0,
                 }}
-                animate={{
-                  x: `${Math.random() * 100}%`,
-                  y: `${Math.random() * 100}%`,
-                  scale: [0, 1, 0],
-                }}
+                
                 transition={{
                   duration: 1,
                   delay: i * 0.2,
@@ -127,11 +119,7 @@ function TechSkill({ tool, index, categoryIndex }: { tool: any; index: number; c
 
         <motion.span
           className={`text-xl ${tool.color} relative z-10`}
-          animate={{
-            rotate: isHovered ? [0, -10, 10, -10, 0] : 0,
-            scale: isHovered ? 1.2 : 1,
-          }}
-          transition={{ duration: 0.5 }}
+          
         >
           {tool.icon}
         </motion.span>
@@ -156,16 +144,7 @@ export default function TechStack() {
               left: `${i * 40}%`,
               top: `${i * 30}%`,
             }}
-            animate={{
-              x: [0, 100, 0],
-              y: [0, -50, 0],
-              scale: [1, 1.2, 1],
-            }}
-            transition={{
-              duration: 15 + i * 3,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "easeInOut",
-            }}
+           
           />
         ))}
       </div>
@@ -180,10 +159,6 @@ export default function TechStack() {
         >
           <motion.h2
             className="text-3xl md:text-4xl font-bold tracking-tight"
-            animate={{
-              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-            }}
-            transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY }}
             style={{
               backgroundImage: "linear-gradient(90deg, currentColor 0%, rgb(99, 102, 241) 50%, currentColor 100%)",
               backgroundSize: "200% auto",
@@ -204,33 +179,16 @@ export default function TechStack() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{
-                duration: 0.5,
-                delay: categoryIndex * 0.1,
-                type: "spring",
-                stiffness: 100,
-              }}
             >
               <Card className="p-6 glass-strong border-accent/20 hover:border-accent/40 transition-all duration-300 h-full group overflow-hidden">
                 <motion.div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  style={{
-                    background: "linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.3), transparent)",
-                  }}
-                  animate={{
-                    x: ["-100%", "100%"],
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Number.POSITIVE_INFINITY,
-                    ease: "linear",
-                  }}
+                  
                 />
 
                 <motion.h3
                   className="text-lg font-semibold mb-6 text-accent relative z-10"
                   whileHover={{ x: 5 }}
-                  transition={{ type: "spring", stiffness: 300 }}
                 >
                   {category}
                 </motion.h3>

@@ -12,7 +12,7 @@ const expertiseAreas = [
     details: [
       "Utilisation des appareils de mesure (multimètre, pince ampermétrique) et traçage de schémas électriques.",
       "Application stricte des consignes de sécurité (consignation LOTO).",
-      "écuriser la reprise de production.",
+      "Sécuriser la reprise de production.",
     ],
     gradient: "from-accent/20 to-accent/5",
   },
