@@ -8,7 +8,7 @@ import { Github, Linkedin, Mail, Twitter, Send, CheckCircle2, Sparkles } from "l
 import { useState, useRef } from "react"
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/julesbellavoir", label: "GitHub" },
+  { icon: Github, href: "https://github.com/Lepionnier92", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com/in/julesbellavoir", label: "LinkedIn" },
   { icon: Twitter, href: "https://twitter.com/julesbellavoir", label: "Twitter" },
 ]
@@ -148,7 +148,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            Créons quelque chose d'incroyable
+            Relevons les défis industriels de demain
           </motion.h2>
 
           <motion.p
@@ -158,7 +158,7 @@ export default function Contact() {
             transition={{ delay: 0.2 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed"
           >
-            Vous avez un projet en tête ou une question à poser ? Envoyez-moi un message et je vous répondrai rapidement !
+            Un projet d'optimisation, une opportunité ou un poste à pourvoir ? Discutons-en dès maintenant.
           </motion.p>
         </motion.div>
 
@@ -349,7 +349,7 @@ export default function Contact() {
           transition={{ duration: 0.5, delay: 1 }}
           className="pt-16 text-center text-sm text-muted-foreground"
         >
-          © 2025 Jules Bellavoir. Créé avec passion et code.
+          © 2026 Jules Bellavoir. Créé avec passion et code.
         </motion.div>
       </div>
     </section>

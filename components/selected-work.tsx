@@ -2,42 +2,11 @@
 
 import { motion, useScroll, useTransform } from "framer-motion"
 import { ArrowRight, ExternalLink, Zap } from "lucide-react"
+import Link from "next/link"
 import { Card } from "@/components/ui/card"
 import Annotation from "@/components/annotation"
+import { projects } from "@/lib/projects"
 import { useRef } from "react"
-
-const projects = [
-  {
-    title: "Chef d'œuvre MSPC",
-    description: "Reabilitation dune vielle porte de bus pour quelle puise servir a de future TP",
-    outcome:
-      "ce projet a été réalisé dans le cadre de mon chef d'œuvre au sein du MSPC, il a consisté à réhabiliter une vielle porte de bus pour qu'elle puisse servir à de futurs travaux pratiques. Le projet a été un succès et a permis de mettre en pratique mes compétences en mécanique et en électronique.",
-    tags: ["Chef d'œuvre", "MSPC", "Automate", "Porte de bus"],
-    year: "2025-2027",
-    gradient: "from-accent to-accent-secondary",
-    link: "",
-  },
-  {
-    title: "Hackaton ISEP",
-    description: "Real-time data visualization platform for enterprise metrics with sub-second query response.",
-    outcome:
-      "Canvas-based rendering for 10k+ data points—SVG became bottleneck at 3k points (45fps → 12fps), canvas maintains 60fps at scale. Debounced queries with stale-while-revalidate pattern reduced API load by 60%—users see cached data instantly, fresh data arrives within 200ms. Server-side aggregation instead of client-side filtering prevented OOM errors on large datasets—moved computation to PostgreSQL, reduced client memory from 2GB to 150MB.",
-    tags: ["React", "D3.js", "TypeScript", "WebSocket"],
-    year: "2025",
-    gradient: "from-accent-secondary to-accent-pink",
-    link: "#",
-  },
-  {
-    title: "Médaille d'Or National MAF",
-    description: "Meilleur Aprentit de France (MAF)",
-    outcome:
-      "",
-    tags: ["Fabrication", "Diagnostic", "Panne", "Montage/Demontage"],
-    year: "2026",
-    gradient: "from-accent-pink to-accent-tertiary",
-    link: "#",
-  },
-]
 
 export default function SelectedWork() {
   const containerRef = useRef<HTMLElement>(null)
@@ -109,6 +78,11 @@ export default function SelectedWork() {
                 perspective: "1000px",
               }}
             >
+              <Link
+                href={`/projects/${project.slug}`}
+                className="block h-full"
+                aria-label={`Voir le projet ${project.title}`}
+              >
               <Card className="group relative p-6 h-full hover:shadow-2xl hover:shadow-accent/10 hover:border-accent/40 transition-all duration-300 cursor-pointer border-border bg-card overflow-hidden">
                 <motion.div
                   className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10`}
@@ -216,6 +190,7 @@ export default function SelectedWork() {
                   </motion.div>
                 </div>
               </Card>
+              </Link>
             </motion.div>
           ))}
         </div>

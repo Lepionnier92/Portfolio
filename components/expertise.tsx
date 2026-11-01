@@ -7,8 +7,8 @@ import { Code2, Layers, Zap } from "lucide-react"
 const expertiseAreas = [
   {
     icon: Code2,
-    title: "Ingénierie Frontend",
-    description: "Création d'interfaces réactives et accessibles avec React, Next.js et les frameworks CSS modernes.",
+    title: "Le diagnostic de pannes",
+    description: "Capacité à identifier rapidement l'origine d'une panne complexe (mécanique, électrique, électronique ou automatisée) à l'aide d'appareils de mesure et de la lecture de schémas techniques.",
     details: [
       "Architecture de composants avec des patterns de composition",
       "Optimisation des performances : code splitting, lazy loading, optimisation des images",
@@ -18,8 +18,8 @@ const expertiseAreas = [
   },
   {
     icon: Layers,
-    title: "Conception Système",
-    description: "Architecture de systèmes évolutifs et maintenables avec une abstraction réfléchie et des limites claires.",
+    title: "La maîtrise de la GMAO",
+    description: "Utilisation des outils numériques pour planifier les interventions préventives, assurer le suivi des pannes, gérer les stocks de pièces et historiser toutes Les actions.",
     details: [
       "Microservices avec architecture événementielle",
       "Conception de schémas de base de données et optimisation des requêtes",
@@ -29,8 +29,8 @@ const expertiseAreas = [
   },
   {
     icon: Zap,
-    title: "Performance",
-    description: "Identification des goulots d'étranglement et mise en œuvre de solutions qui comptent pour les utilisateurs.",
+    title: "Les habilitations techniques spécifique",
+    description: "respecte rigoureusement les normes de sécurité et je possède les certifications requises (électriques, hydrauliques ou fluides) pour manipuler les équipements industriels ou tertiaires.",
     details: [
       "Optimisation des Core Web Vitals (LCP, FID, CLS)",
       "Analyse des bundles et code splitting stratégique",
