@@ -33,12 +33,10 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-xl text-foreground/90 leading-relaxed font-body">
-              Je crois en la création de choses qui comptent. Chaque ligne de code doit servir un but, chaque décision de design
-              doit améliorer l'expérience utilisateur.
+              Passionné par les systèmes automatisés et les nouvelles technologies, je me spécialise dans la maintenance industrielle et les équipements connectés. Mon objectif est de garantir la disponibilité des lignes de production tout en intégrant les innovations de l'Industrie 4.0.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed font-body">
-              Quand je ne code pas, vous me trouverez en train d'explorer de nouvelles technologies, de contribuer à l'open source, ou
-              de savourer un bon café tout en esquissant des idées d'interface.
+              Régulièrement sur le terrain ou en projet d'optimisation, j'aime comprendre la logique interne des machines pour anticiper les défaillances et intervenir avec efficacité.
             </p>
           </motion.div>
 

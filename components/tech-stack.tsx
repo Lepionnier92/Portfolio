@@ -7,32 +7,31 @@ import { Card } from "@/components/ui/card"
 import { useState } from "react"
 
 const techStack = {
-  "Frontend ✧*。": [
-    { name: "HTML", icon: "🌐", color: "text-orange-500" },
-    { name: "CSS", icon: "🎨", color: "text-blue-500" },
-    { name: "React", icon: "⚛️", color: "text-cyan-400" },
-    { name: "Next.js", icon: "▲", color: "text-foreground" },
-    { name: "Tailwind", icon: "🎐", color: "text-teal-400" },
-    { name: "TypeScript", icon: "📘", color: "text-blue-600" },
+  "Automatisme & Supervision": [
+    { name: "PLCs", icon: "🌐", color: "text-orange-500" },
+    { name: "Automates", icon: "🎨", color: "text-blue-500" },
+    { name: "IHM", icon: "⚛️", color: "text-cyan-400" },
+    { name: "Touch Panel", icon: "▲", color: "text-foreground" },
+    ],
+  "Électrotechnique & Pneumatique": [
+    { name: "SchemELECT", icon: "🟢", color: "text-green-500" },
+    { name: "Multimètres", icon: "🚂", color: "text-gray-400" },
+    { name: "Capteurs", icon: "🔍", color: "text-purple-400" },
+    { name: "Vérins", icon: "🐘", color: "text-blue-400" },
+    { name: "Variateurs de vitesse", icon: "🔴", color: "text-red-500" },
   ],
-  "Backend ✧*。": [
-    { name: "Node.js", icon: "🟢", color: "text-green-500" },
-    { name: "Express", icon: "🚂", color: "text-gray-400" },
-    { name: "PostgreSQL", icon: "🐘", color: "text-blue-400" },
-    { name: "Redis", icon: "🔴", color: "text-red-500" },
+  "Outils Numériques & IoT": [
+    { name: "GMAO", icon: "JS", color: "text-yellow-400" },
+    { name: "Capteurs connectés", icon: "TS", color: "text-blue-500" },
+    { name: "Réseaux industriels (Modbus)", icon: "🐍", color: "text-blue-400" },
+    { name: "Python", icon: "🔷", color: "text-cyan-400" },
   ],
-  "Langages ✧*。": [
-    { name: "JavaScript", icon: "JS", color: "text-yellow-400" },
-    { name: "TypeScript", icon: "TS", color: "text-blue-500" },
-    { name: "Python", icon: "🐍", color: "text-blue-400" },
-    { name: "Go", icon: "🔷", color: "text-cyan-400" },
-  ],
-  "Outils & DevOps ✧*。": [
+  /*"Outils & DevOps ✧*。": [
     { name: "Git", icon: "🌿", color: "text-orange-600" },
     { name: "Docker", icon: "🐋", color: "text-blue-500" },
     { name: "Netlify", icon: "▲", color: "text-foreground" },
     { name: "GitHub Actions", icon: "⚙️", color: "text-gray-400" },
-  ],
+  ],*/
 }
 
 function TechSkill({ tool, index, categoryIndex }: { tool: any; index: number; categoryIndex: number }) {
