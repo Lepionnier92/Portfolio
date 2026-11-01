@@ -1,6 +1,7 @@
 import Hero from "@/components/hero"
 import Expertise from "@/components/expertise"
 import TechStack from "@/components/tech-stack"
+import Experience from "@/components/experience"
 import SelectedWork from "@/components/selected-work"
 import Stats from "@/components/stats"
 import About from "@/components/about"
@@ -16,6 +17,7 @@ export default function HomePage() {
         <Hero />
         <Expertise />
         <TechStack />
+        <Experience />
         <SelectedWork />
         <About />
         <Contact />
