@@ -72,35 +72,7 @@ export default function About() {
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-            className="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-accent/5 to-accent-secondary/5 border border-accent/10"
-          >
-            <h3 className="text-2xl font-semibold text-foreground font-heading flex items-center gap-3">
-              <span>Stack Actuel</span>
-              <Sparkles className="w-5 h-5 text-accent-yellow" />
-            </h3>
-            <div className="flex flex-wrap gap-3">
-              {["Next.js", "React", "TypeScript", "Tailwind CSS", "Node.js", "PostgreSQL", "Framer Motion"].map(
-                (tech, i) => (
-                  <motion.span
-                    key={tech}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.5 + i * 0.05 }}
-                    whileHover={{ scale: 1.15, rotate: 3 }}
-                    className="px-4 py-2 text-sm bg-card border border-accent/20 rounded-full font-medium text-accent hover:bg-accent/10 hover:border-accent/40 transition-all duration-200 font-mono"
-                  >
-                    {tech}
-                  </motion.span>
-                ),
-              )}
-            </div>
-          </motion.div>
+          
         </motion.div>
 
         <Annotation text="Toujours en apprentissage" delay={0.5} />

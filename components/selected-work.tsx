@@ -27,20 +27,7 @@ export default function SelectedWork() {
           transition={{ type: "spring", damping: 20, stiffness: 100 }}
           className="space-y-4 mb-16"
         >
-          <motion.h2
-            className="text-5xl md:text-6xl font-bold tracking-tight font-display"
-            animate={{
-              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-            }}
-            transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-            style={{
-              backgroundImage: "linear-gradient(to right, var(--foreground), var(--accent), var(--foreground))",
-              backgroundSize: "200% auto",
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-            }}
-          >
+          <motion.h2 className="text-5xl md:text-6xl font-bold tracking-tight font-display">
             Projets Sélectionnés
           </motion.h2>
           <motion.p
@@ -83,45 +70,7 @@ export default function SelectedWork() {
                 className="block h-full"
                 aria-label={`Voir le projet ${project.title}`}
               >
-              <Card className="group relative p-6 h-full hover:shadow-2xl hover:shadow-accent/10 hover:border-accent/40 transition-all duration-300 cursor-pointer border-border bg-card overflow-hidden">
-                <motion.div
-                  className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10`}
-                  initial={false}
-                  whileHover={{
-                    opacity: 0.15,
-                    scale: 1.5,
-                  }}
-                  transition={{ duration: 0.4 }}
-                />
-
-                <motion.div
-                  className="absolute inset-0 pointer-events-none"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                >
-                  {[...Array(8)].map((_, i) => (
-                    <motion.div
-                      key={i}
-                      className="absolute w-1 h-1 bg-accent rounded-full"
-                      initial={{
-                        x: Math.random() * 100 + "%",
-                        y: Math.random() * 100 + "%",
-                        scale: 0,
-                      }}
-                      whileHover={{
-                        y: [null, -50],
-                        scale: [0, 1, 0],
-                        opacity: [0, 1, 0],
-                      }}
-                      transition={{
-                        duration: 1.5,
-                        delay: i * 0.1,
-                        repeat: Number.POSITIVE_INFINITY,
-                      }}
-                    />
-                  ))}
-                </motion.div>
-
+              <Card className="group relative p-6 h-full hover:border-accent/40 transition-all duration-300 cursor-pointer border-border bg-card overflow-hidden">
                 <div className="relative space-y-4 h-full flex flex-col">
                   <div className="space-y-3">
                     <div className="flex items-start justify-between gap-2">
@@ -136,7 +85,6 @@ export default function SelectedWork() {
                         whileHover={{ scale: 1.3, rotate: 180 }}
                         transition={{ type: "spring", stiffness: 300 }}
                       >
-                        <Zap className="w-4 h-4 text-accent-yellow" />
                       </motion.div>
                     </div>
                     <motion.h3
@@ -152,7 +100,7 @@ export default function SelectedWork() {
                   <div className="space-y-2 flex-1">
                     <motion.div
                       className="inline-flex items-center gap-2 px-3 py-2 bg-accent/5 border border-accent/20 rounded-lg"
-                      whileHover={{ scale: 1.02, borderColor: "rgba(99, 179, 237, 0.4)" }}
+                      whileHover={{ borderColor: "rgba(99, 179, 237, 0.4)" }}
                     >
                       <ArrowRight className="w-4 h-4 text-accent" />
                       <p className="text-sm text-foreground font-medium font-body">{project.outcome}</p>
@@ -177,16 +125,10 @@ export default function SelectedWork() {
 
                   <motion.div
                     className="flex items-center gap-2 text-sm text-accent font-medium pt-2 font-heading"
-                    whileHover={{ x: 8 }}
+                 
                     transition={{ type: "spring", stiffness: 400 }}
                   >
                     Voir le projet
-                    <motion.div
-                      animate={{ rotate: [0, -15, 0] }}
-                      transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                    </motion.div>
                   </motion.div>
                 </div>
               </Card>

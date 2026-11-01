@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     slug: "hackaton-isep",
     title: "Hackaton ISEP",
-    description: "Real-time data visualization platform for enterprise metrics with sub-second query response.",
+    description: " le projet mené en partenariat avec l’entreprise Tenexa, autour du thème « compétences augmentées & IA au service du matching professionnel »",
     outcome:
       "Compétition d'innovation et d'idéation en équipe mixte. Conception d'une solution technologique visant à utiliser l'IA pour optimiser le matching professionnel et la valorisation des compétences terrain. Projet développé en collaboration avec des étudiants ingénieurs de l'ISEP dans le cadre des Cordées de la Réussite.",
     tags: ["React Native + Expo SDK 54", "TypeScript", "NativeWind(Tailwind CSS)", "Expo Router"],

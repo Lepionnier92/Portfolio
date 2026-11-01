@@ -8,23 +8,23 @@ import { useState } from "react"
 
 const techStack = {
   "Automatisme & Supervision": [
-    { name: "PLCs", icon: "🌐", color: "text-orange-500" },
-    { name: "Automates", icon: "🎨", color: "text-blue-500" },
-    { name: "IHM", icon: "⚛️", color: "text-cyan-400" },
-    { name: "Touch Panel", icon: "▲", color: "text-foreground" },
+    { name: "PLCs", color: "text-orange-500" },
+    { name: "Automates", color: "text-blue-500" },
+    { name: "IHM", color: "text-cyan-400" },
+    { name: "Touch Panel", color: "text-foreground" },
     ],
   "Électrotechnique & Pneumatique": [
-    { name: "SchemELECT", icon: "🟢", color: "text-green-500" },
-    { name: "Multimètres", icon: "🚂", color: "text-gray-400" },
-    { name: "Capteurs", icon: "🔍", color: "text-purple-400" },
-    { name: "Vérins", icon: "🐘", color: "text-blue-400" },
-    { name: "Variateurs de vitesse", icon: "🔴", color: "text-red-500" },
+    { name: "SchemELECT", color: "text-green-500" },
+    { name: "Multimètres",  color: "text-gray-400" },
+    { name: "Capteurs", color: "text-purple-400" },
+    { name: "Vérins",  color: "text-blue-400" },
+    { name: "Variateurs de vitesse",  color: "text-red-500" },
   ],
   "Outils Numériques & IoT": [
-    { name: "GMAO", icon: "JS", color: "text-yellow-400" },
-    { name: "Capteurs connectés", icon: "TS", color: "text-blue-500" },
-    { name: "Réseaux industriels (Modbus)", icon: "🐍", color: "text-blue-400" },
-    { name: "Python", icon: "🔷", color: "text-cyan-400" },
+    { name: "GMAO",  color: "text-yellow-400" },
+    { name: "Capteurs connectés",  color: "text-blue-500" },
+    { name: "Réseaux industriels (Modbus)",  color: "text-blue-400" },
+    { name: "Python",  color: "text-cyan-400" },
   ],
   /*"Outils & DevOps ✧*。": [
     { name: "Git", icon: "🌿", color: "text-orange-600" },
