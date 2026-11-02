@@ -37,9 +37,9 @@ const experiences: ProfessionalExperience[] = [
     company: "RATPgroup",
     type: "Stage",
     period: "Juin 2025",
-    location: "Ville, France",
+    location: "Boulogne-Billancourt, Île-de-France, France",
     description: "Ajoutez une courte description de cette expérience professionnelle.",
-    skills: ["Compétence 1", "Compétence 2"],
+    skills: ["Maintenance corrective", "maintenance préventive", "Montage/Demontage"],
   },
 ]
 

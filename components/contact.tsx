@@ -20,7 +20,7 @@ export default function Contact() {
     message: "",
   })
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
-  const formRef = useRef<HTMLFormElement>(null)
+  const formRef = useRef<HTMLDivElement>(null)
 
   const mouseX = useSpring(0, { stiffness: 500, damping: 100 })
   const mouseY = useSpring(0, { stiffness: 500, damping: 100 })
@@ -167,12 +167,6 @@ export default function Contact() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          style={{
-            rotateX,
-            rotateY,
-            transformStyle: "preserve-3d",
-          }}
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           className="max-w-2xl mx-auto"
@@ -262,7 +256,6 @@ export default function Contact() {
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.7 }}
               >
                 <Button
                   type="submit"
@@ -294,6 +287,23 @@ export default function Contact() {
                   </span>
                 </Button>
               </motion.div>
+
+              <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                <div className="h-px flex-1 bg-border/50" />
+                <span>ou</span>
+                <div className="h-px flex-1 bg-border/50" />
+              </div>
+
+              <Button
+                asChild
+                variant="outline"
+                className="w-full h-12 border-accent/50 bg-accent/10 text-accent"
+              >
+                <a href="mailto:jules.bellavoir@gmail.com">
+                  <Mail className="w-5 h-5" />
+                  Envoyer moi un mail directement
+                </a>
+              </Button>
 
               {/* Success message */}
               {status === "success" && (
@@ -349,7 +359,7 @@ export default function Contact() {
           transition={{ duration: 0.5, delay: 1 }}
           className="pt-16 text-center text-sm text-muted-foreground"
         >
-          © 2026 Jules Bellavoir. Créé avec passion et code.
+          © 2026 Jules Bellavoir. Tous droits réservés.
         </motion.div>
       </div>
     </section>
